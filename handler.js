@@ -83,6 +83,8 @@ export const pluginsLoader = async (directory) => {
     }
     
     log.sys(`Plugin Aktif: ${successCount} Berhasil Dimuat.`);
+
+    return Array.from(pluginCache.values());
 };
 
 export const runPlugins = async (m, ctx) => {
