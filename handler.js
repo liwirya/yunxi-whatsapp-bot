@@ -154,8 +154,8 @@ const startWatcher = () => {
     });
 };
 
-// -- [ Init ] --
 (async () => {
     await pluginsLoader();
     startWatcher();
 })();
+
